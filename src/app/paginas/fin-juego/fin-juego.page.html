@@ -1,0 +1,91 @@
+<ion-header>
+    <ion-toolbar class="tarjetaAcontent">
+
+        <ion-icon slot="start" name="sad-outline" size="large"></ion-icon>
+        <ion-title>SE ACABO!</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-text>Escoge el equipo ganador</ion-text>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+
+                <ion-list>
+                    <ion-radio-group [(ngModel)]="ganador">
+                        <ion-item>
+                            <ion-label>{{equipo1}}</ion-label>
+                            <ion-radio value="equipo1" ></ion-radio>
+                        </ion-item>
+
+                        <ion-item>
+                        <ion-label>{{equipo2}}</ion-label>
+                            <ion-radio value="equipo2" ></ion-radio>
+                        </ion-item>
+
+                    </ion-radio-group>
+                </ion-list>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-text>¿Quieren tomarse una foto?</ion-text>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-list>
+                    <ion-radio-group [(ngModel)]="eleccion">
+                        <ion-item>
+                            <ion-label>De ley!</ion-label>
+                            <ion-radio value="si"></ion-radio>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label>No, ya nos abrimos!</ion-label>
+                            <ion-radio value="no"></ion-radio>
+                        </ion-item>
+                    </ion-radio-group>
+                </ion-list>
+                <ion-button class="tarjetaRcontent" (click)="espera()">ACEPTAR</ion-button>
+
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+
+                <br>
+                <ion-avatar>
+                    <img src="/assets/imagenes/piquero4.png">
+                </ion-avatar>
+
+            </ion-col>
+            <ion-col>
+                <br>
+                <ion-avatar>
+                    <img src="/assets/imagenes/foca3.png">
+                </ion-avatar>
+            </ion-col>
+
+
+            <ion-col class>
+
+                <br>
+                <ion-avatar>
+                    <img src="/assets/imagenes/delfinR2.png">
+                </ion-avatar>
+
+            </ion-col>
+            <ion-col>
+
+                <br>
+                <ion-avatar>
+                    <img src="/assets/imagenes/gayo.png">
+                </ion-avatar>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

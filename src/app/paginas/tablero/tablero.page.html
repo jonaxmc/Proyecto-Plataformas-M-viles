@@ -1,0 +1,102 @@
+<ion-header>
+    <ion-toolbar class="tablero">
+            <ion-buttons slot="start">
+                    <ion-menu-button></ion-menu-button>
+                  </ion-buttons>
+        <ion-title>Tablero</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+    <ion-grid>
+        <ion-row>
+
+            <ion-col>
+                <br> &nbsp;&nbsp;&nbsp;&nbsp;
+                <ion-chip color="dark" >
+                    <ion-label [color]="pintura1" ><ion-text size="large"><h2>EQUIPO: {{equipo1}}</h2></ion-text></ion-label>
+                  </ion-chip>                
+
+                <!-- <ion-button>
+                    <ion-icon slot="icon-only" name="gift-outline" color="white"></ion-icon>
+                </ion-button> -->
+            </ion-col>
+
+            <ion-col>
+                <br> &nbsp;&nbsp;&nbsp;&nbsp;
+                <ion-chip color="dark">
+                    <ion-label [color]="pintura2" ><ion-text size="large"><h2>EQUIPO: {{equipo2}}</h2></ion-text></ion-label>
+                  </ion-chip>     
+                <!-- <ion-button>
+                    <ion-icon slot="icon-only" name="gift-outline" color="white"></ion-icon>
+                </ion-button> -->
+            </ion-col>
+        </ion-row>
+        <ion-row>
+
+            <ion-col></ion-col>
+            <ion-col>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+                <br> &nbsp;&nbsp;&nbsp;&nbsp;
+                <ion-button color="primary" size="large" (click)="presentLoading()"> 
+                    <ion-icon slot="icon-only" name="cube" color="light" size="large"></ion-icon>
+                    LANZAR DADO
+                </ion-button>
+            </ion-col>
+            <ion-col>
+            </ion-col>
+        </ion-row>
+        <!-- COLORES -->
+        <br>
+        <br>
+        <br>
+        <!-- <ion-row>
+            <ion-col class="pikero">
+                <ion-text>PIKERO</ion-text>
+                <br>
+                <ion-avatar>
+                    <img src="/assets/imagenes/piquero4.png">
+                </ion-avatar>
+
+            </ion-col>
+            <ion-col class="foca">
+                <ion-text>FOCA</ion-text>
+                <br>
+                <ion-avatar>
+                    <img src="/assets/imagenes/foca1.png">
+                </ion-avatar>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col class="delfin">
+                <ion-text>DELFIN</ion-text>
+                <br>
+                <ion-avatar>
+                    <img src="/assets/imagenes/delfinR2.png">
+                </ion-avatar>
+
+            </ion-col>
+            <ion-col class="gayo">
+                <ion-text>PAPAGAYO</ion-text>
+                <br>
+                <ion-avatar>
+                    <img src="/assets/imagenes/gayo.png">
+                </ion-avatar>
+            </ion-col>
+        </ion-row> -->
+    </ion-grid>
+
+</ion-content>
+
+<ion-footer class="tablero">
+    <ion-toolbar>
+        <ion-button expand="full" href="/fin-juego">
+            <ion-icon slot="end" name="trophy-outline" ></ion-icon>
+            Ganador
+        </ion-button>
+    </ion-toolbar>
+</ion-footer>

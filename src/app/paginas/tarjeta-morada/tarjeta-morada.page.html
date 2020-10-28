@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar class="tarjetaMorada">
+            <ion-buttons slot="start">
+                    <ion-menu-button></ion-menu-button>
+                  </ion-buttons>
+        <ion-icon slot="start" name="gift-outline" size="large"></ion-icon>
+        <ion-title>Tarjeta Morada..Ya valiste!</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-text>Escoge un color para tu oponente</ion-text>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <form>
+                    <ion-list>
+                        <ion-radio-group [(ngModel)]="seleccion" name="radio-group"  #radioGroup >
+                            <ion-item *ngFor="let item of tarjeta" (ionSelect)="radioSelect($event)" color="{{item.color}}">
+                                <ion-label>{{item.nombre}}</ion-label>
+                                <ion-radio slot="start" value="{{item.url}}" ></ion-radio>
+                              </ion-item>
+                        </ion-radio-group>
+                    </ion-list>
+                    <ion-button color="primary" (click)="ingreso()">ACEPTAR</ion-button>
+                </form>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

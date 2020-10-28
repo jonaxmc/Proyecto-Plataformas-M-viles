@@ -1,0 +1,262 @@
+{
+    "tarjeta_azul": {
+        "preguntas_tarjeta": [{
+                "categoria": "Guayasamin",
+                "preguntas": [{
+                        "num": 1,
+                        "preg": "Considerado un símbolo de espiritualidad y poder para muchas culturas andinas, además ha poblado históricamente los territorios de Sudamerica. En el Ecuador es considerado como el Rey de los Andes.",
+                        "pista": "Es símbolo emblemático de nuestra nación.",
+                        "respuesta": "cóndor"
+                    },
+                    {
+                        "num": 2,
+                        "preg": "El monumento de aluminio más alto del mundo, diseñado por el arquitecto Agustín de la Herrón Matorras",
+                        "pista": "Esta ubicado en Quito",
+                        "respuesta": "La virgen de El Panecillo."
+                    },
+                    {
+                        "num": 3,
+                        "preg": "Nombre de la tortuga que murió con poco más de 100 años.Durante décadas sus cuidadores intentaron que se reprodujera con hembras de una especie cercana, sin embargo, falleció el 24 de junio de 2012 sin dejar descendencia.",
+                        "pista": "Vivió en la Isla Pinta.",
+                        "respuesta": "Solitario Jorge"
+                    },
+                    {
+                        "num": 4,
+                        "preg": "En 1979, el monumento fue trasladado 7 km al oeste, a la ciudad de Calacala. Y entre 1979 y 1982 fue construido el emblemático monumento ecuatorial de 30 metros de altura, con el auspicio del Consejo Provincial de Pichincha",
+                        "pista": "Trazó una línea desde el centro de la escalera que da al este, atravesando la plaza para marcar la línea que divide al mundo en dos.",
+                        "respuesta": "Monumento a la mitad del mundo"
+                    },
+                    {
+                        "num": 5,
+                        "preg": "Colorea la Bandera de la provincia de Santa Elena",
+                        "pista": "Tiene tres colores verticales.",
+                        "respuesta": "Se encuentra conformada por tres franjas verticales del mismo tamaño, en el siguiente orden: verde, azul y celeste, que corresponden a los cantones de Santa Elena, Salinas y La Libertad, de acuerdo al orden histórico de cantonización de los mismos y que ratifican la unidad monolática de sus habitantes."
+                    }
+                ]
+            },
+
+            {
+                "categoria": "Vasija de barro",
+                "preguntas": [{
+                        "num": 1,
+                        "preg": "Nace de un árbol del mismo nombre que aparece solo en los climas cálidos. Para su utilización hay que esperar que el fruto madure y tras varios dias de espera y proceso esta listo para que las manos del ser humano le den forma.",
+                        "pista": "recipiente donde se bebe la chicha.",
+                        "respuesta": "pilche"
+                    },
+                    {
+                        "num": 2,
+                        "preg": "Para la mujer, bailar con este artículo sobre la cabeza es mostrar la esencia de la alegría e identificación del pueblo afrodescendiente, que los ancestros han mantenido desde épocas de la esclavitud, pero que se ha mantenido en el tiempo y en el espacio.",
+                        "pista": "Este artículo en general es de vidrio.",
+                        "respuesta": "botella"
+                    },
+                    {
+                        "num": 3,
+                        "preg": "Es un tipo de zampoña típica del Ecuador. Se fabrica con cañas de carrizo y también, más restringidamente, con cañones de plumas de cóndor.",
+                        "pista": "instrumento de viento",
+                        "respuesta": "rondador"
+                    },
+                    {
+                        "num": 4,
+                        "preg": "Es conocido con un nombre de un pa�s de Am�rica central a pesar de que se elabora en Montecristi, Jipijapa, en Manab� y Cuenca en el Austro ecuatoriano.",
+                        "pista": "Artículo de vestimenta.",
+                        "respuesta": "sombrero de Panamá"
+                    },
+                    {
+                        "num": 5,
+                        "preg": "Está compuesto por un aro al cual se fija un tejido agujereado. En Guangopolo se lo elabora con la crin del caballo, extra�do de la parte superior de la nuca y de la cola.",
+                        "pista": "Es un objeto para cernir.",
+                        "respuesta": "cedazo"
+                    }
+                ]
+            }
+        ]
+    },
+    "tarjeta_verde": {
+
+        "preguntas_tarjeta": [{
+                "categoria": "Michelena",
+                "preguntas": [{
+                        "num": 1,
+                        "preg": "Interpreta a Jaime Roldós Aguilera en su último discurso"
+                    },
+                    {
+                        "num": 2,
+                        "preg": "Interpreta a Álvaro Noboa con una de sus frases tipicas"
+                    },
+                    {
+                        "num": 3,
+                        "preg": "Imita a un pingüino de Galápagos"
+                    },
+                    {
+                        "num": 4,
+                        "preg": "Imita a un lobo marino"
+                    },
+                    {
+                        "num": 5,
+                        "preg": "Recita el poema El alma en los labios del poeta Medardo Angel Silva."
+                    }
+                ]
+            },
+
+            {
+                "categoria": "Torcasa/huirakchuru",
+                "preguntas": [{
+                        "num": 1,
+                        "preg": "Tararea la cancion El Chulla Quiteño del Grupo Tradicion."
+                    },
+                    {
+                        "num": 2,
+                        "preg": "Canta Guayaquileño, Madera de Guerrero del compositor Carlos Rubira Infante."
+                    },
+                    {
+                        "num": 3,
+                        "preg": "Canta Chola Cuencana interpretada por Don Benitez-Valencia."
+                    },
+                    {
+                        "num": 4,
+                        "preg": "Canta Nuestro Juramento interpretada por Julio Jaramillo."
+                    },
+                    {
+                        "num": 5,
+                        "preg": "Canta: En vida, interpretada por Gerardo Moran."
+                    }
+                ]
+            }
+        ]
+
+    },
+
+    "tarjeta_roja": {
+        "preguntas_tarjeta": [{
+                "num": 1,
+                "preg": "¿En que año se firmo la primera constitucion del Ecuador?",
+                "opciones": ["1900", "1830", "1960", "2000"],
+                "respuesta": "1830"
+            },
+            {
+                "num": 2,
+                "preg": "¿Quien fundo la ciudad de Quito?",
+                "opciones": ["Diego de Almagro", "Francisco Pizarro", "Francisco de Orellana", "Sebastian de Benalcazar"],
+                "respuesta": "Sebastian de Benalcazar"
+            },
+            {
+                "num": 3,
+                "preg": "¿Quien fue el primer presidente del Ecuador?",
+                "opciones": ["Jose Joaquin de Olmedo", "Gabriel Garcia Moreno", "Juan Jose Flores", "Antonio Jose de Sucre"],
+                "respuesta": "Juan Jose Flores"
+            },
+            {
+                "num": 4,
+                "preg": "¿Quien inauguro el ferrocarril que unia Quito con Guayaquil?",
+                "opciones": ["Eloy Alfaro", "Isidro Ayora", "Velasco Ibarra", "Leonidas Plaza"],
+                "respuesta": "Eloy Alfaro"
+            },
+            {
+                "num": 5,
+                "preg": "¿En que año se liberó la Guerra del Cenepa?",
+                "opciones": ["1991", "1995", "1998", "2000"],
+                "respuesta": "1995"
+            },
+
+            {
+                "num": 6,
+                "preg": "¿Qué celebramos el 10 de Agosto?",
+                "opciones": ["Día del Escudo", "Fundación de Cuenca", "Batalla de Tarqui", "Primer Grito de la Independencia"],
+                "respuesta": "Primer Grito de la Independencia"
+            },
+            {
+                "num": 7,
+                "preg": "Nombre de un famoso ex-tenista ecuatoriano",
+                "opciones": ["Richard Carapaz", "Alexandra Escobar", "Pancho Segura", "Alex Quiñonez"],
+                "respuesta": "Pancho Segura"
+            },
+            {
+                "num": 8,
+                "preg": "¿Cuál es la capital de Galápagos?",
+                "opciones": ["Puerto Ayora", "Santa Cruz", "Puerto Baquerizo Moreno", "Santa Isabel"],
+                "respuesta": "Puerto Baquerizo Moreno"
+            },
+            {
+                "num": 9,
+                "preg": "¿En dónde se encuentra la cascada de Peguche?",
+                "opciones": ["Cuenca", "Otavalo", "Loja", "Puyo"],
+                "respuesta": "Otavalo"
+            },
+            {
+                "num": 10,
+                "preg": "¿Cuál es la capital de Sucumbíos?",
+                "opciones": ["Morona", "Azogues", "Baeza", "Nueva Loja"],
+                "respuesta": "Nueva Loja"
+            }
+        ]
+    },
+
+    "tarjeta_amarilla": {
+
+    "preguntas_tarjeta":[{
+                "categoria": "Asi ha de ser",
+                "preguntas": [{
+                        "num": 1,
+                        "preg": "Nombre de un gran guerrero indigena ",
+                        "pista": "Apodado cara de piedra",
+                        "opcion": "UHIRMAÑUI",
+                        "respuesta": "RUMIÑAHUI"
+                    },
+                    {
+                        "num": 2,
+                        "preg": "Nombre del atleta ecuatoriano que ganó una medalla de oro en los juegos olímpicos",
+                        "pista": "Es de Cuenca",
+                        "opcion": "NJFESFORE",
+                        "respuesta": "JEFFERSON"
+                    },
+                    {
+                        "num": 3,
+                        "preg": "Plato típico de la Sierra",
+                        "pista": "Se prepara con la sangre del borrego",
+                        "opcion": "HOYOLARUCA",
+                        "respuesta": "YAHUARLOCRO"
+                    },
+                    {
+                        "num": 4,
+                        "preg": "Plato típico de la Costa",
+                        "pista": "Se prepara con plátano verde",
+                        "opcion": "CEHORCIV",
+                        "respuesta": "CORVICHE"
+                    },
+                    {
+                        "num": 5,
+                        "preg": "Nombre de una etnia indígena de la Amazonia",
+                        "pista": "Viven en la provincia de Sucumbíos",
+                        "opcion": "FONACES",
+                        "respuesta": "COFANES"
+                    }
+                ]
+            }
+        ]
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

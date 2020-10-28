@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Foto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-text-center">
+  <h2>Felicidades {{ganador}}</h2>
+  <ion-button (click)="abrirCamara()" expand="block">
+    Abrir Camara
+    <ion-icon name="camera-outline" slot="end"></ion-icon>
+  </ion-button>
+
+  <ion-img [src]="img" *ngIf="img"></ion-img>
+
+
+  <ion-button *ngIf="state === 'false'" color="success" expand="block" [class.button-disabled]='false' (click)="compartir()">COMPARTIR</ion-button>
+  <ion-button *ngIf="state === 'true'" color="success" expand="block" [class.button-disabled]='true' >COMPARTIR</ion-button>
+
+</ion-content>
+
+<ion-footer>
+  <ion-button expand="block" color="danger" (click)="salir()">SALIR</ion-button>
+</ion-footer>

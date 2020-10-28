@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-toolbar class="config">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/inicio"></ion-back-button>
+        </ion-buttons>
+        <ion-icon slot="end" name="settings-outline" size="large"></ion-icon>
+        <ion-title>Configuracion</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+        <ion-list>
+            <ion-list-header>
+                <ion-label>Temporizador</ion-label>
+            </ion-list-header>
+            <ion-item>
+                    <ion-label>MINUTOS</ion-label>
+                    <ion-select ok-text="ingresar" [(ngModel)]="minutosnuevos" [placeholder]="minutos" cancel-text="Cancelar" >
+                      <ion-select-option *ngFor="let article of numbers2" [value]="article">{{article}}</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+                  <ion-item>
+                        <ion-label>SEGUNDOS</ion-label>
+                        <ion-select  ok-text="ingresar" [(ngModel)]="segundosnuevos" [placeholder]="segundo" cancel-text="Cancelar" >
+                          <ion-select-option *ngFor="let article of numbers" [value]="article">{{article}}</ion-select-option>
+                        </ion-select>
+                      </ion-item>
+            
+
+        </ion-list>
+
+        <ion-button (click)="configurar()" expand="full">APLICAR</ion-button>
+</ion-content>

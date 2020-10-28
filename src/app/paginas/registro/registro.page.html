@@ -1,0 +1,75 @@
+<ion-header>
+    <ion-toolbar class="tarjetaVerde">
+            <ion-buttons slot="start">
+                    <ion-menu-button></ion-menu-button>
+                  </ion-buttons>
+        <ion-title align="center">EQUIPOS</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+    <br>
+    <ion-title align="center">Escribe el nombre de los Equipos</ion-title>
+    <ion-list>
+        <ion-item>
+            <ion-avatar slot="start" class=" ion-margin-start ">
+                <img src="/assets/imagenes/iconoE2.png">
+            </ion-avatar>
+            <ion-title align="center">{{equipo1 || 'EQUIPO 1'}}</ion-title>
+            <ion-button color="width" (click)="presentAlertPrompt()">
+                <ion-icon name="pencil-outline" size="large" color="primary"></ion-icon>
+            </ion-button>
+
+
+        </ion-item>
+    </ion-list>
+    <ion-list>
+        <ion-item>
+            <ion-avatar slot="start" class=" ion-margin-start ">
+                <img src="/assets/imagenes/iconoE2.png">
+            </ion-avatar>
+            <ion-title align="center">{{equipo2 ||'EQUIPO 2'}} </ion-title>
+            <ion-button color="width" (click)="presentAlertPrompt2()">
+                <ion-icon name="pencil-outline" size="large" color="primary"></ion-icon>
+            </ion-button>
+        </ion-item>
+    </ion-list>
+    <p align="center" >
+        <ion-button expand="full" (click)="ingreso()">JUGAR</ion-button>
+
+    </p>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+
+                <br>
+                <ion-avatar>
+                    <img src="/assets/imagenes/piquero4.png">
+                </ion-avatar>
+
+            </ion-col>
+            <ion-col>
+                <br>
+                <ion-avatar>
+                    <img src="/assets/imagenes/foca3.png">
+                </ion-avatar>
+            </ion-col>
+
+
+            <ion-col class>
+
+                <br>
+                <ion-avatar>
+                    <img src="/assets/imagenes/delfinR2.png">
+                </ion-avatar>
+
+            </ion-col>
+            <ion-col>
+
+                <br>
+                <ion-avatar>
+                    <img src="/assets/imagenes/gayo.png">
+                </ion-avatar>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

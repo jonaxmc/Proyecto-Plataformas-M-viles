@@ -1,0 +1,83 @@
+<ion-header>
+    <ion-toolbar class="tarjetaVerde">
+        <ion-avatar slot="end" class=" ion-margin-start ">
+            <img src="/assets/imagenes/foca3.png">
+        </ion-avatar>
+
+        <ion-buttons slot="start">
+                <ion-menu-button></ion-menu-button>
+              </ion-buttons>
+        <ion-title align="center">!QUE FOCA!</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="tarjetaVacontent">
+    <ion-grid>
+        <ion-row >
+            <ion-col class="ion-align-items-center">
+                <ion-title>
+                    !Saca al actor que llevas dentro!
+                </ion-title>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-card>
+        <ion-card-header class="tarjetaVerde">
+        <ion-card-title align="center ">{{nombrecategoria}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content align="justify ">
+            <br>
+            <!-- style="color:rgb(255,255,255);" -->
+            <ion-text><h1>{{nombrepreg}}</h1></ion-text>
+            
+        </ion-card-content>
+
+    </ion-card>
+    <ion-grid>
+        <ion-row class="ion-justify-content-center">
+            <svg
+            id="progress-circle"
+            width="30vh"
+            height="30vh"
+            viewBox="0 0 200 200">
+          
+            <linearGradient id="linearColors1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#ddd6f3"></stop>
+              <stop offset="50%" stop-color="#faaca8"></stop>
+            </linearGradient>
+            <circle
+                cx="50%"
+                cy="50%"
+                [attr.r]="circleR"
+                fill="none"
+                stroke="#f3f3f3"
+                stroke-width="12"
+              />
+          
+              <circle
+                cx="50%"
+                cy="50%"
+                [attr.r]="circleR"
+                fill="none"
+                stroke="url(#linearColors1)"
+                stroke-width="12"
+                stroke-linecap="round"
+                [attr.stroke-dasharray]="circleDasharray"
+                [attr.stroke-dashoffset]="percentageOffset(percent | async)"
+              />
+              <text x="50%" y="55%" class="timer-text">{{ time | async }}</text>
+            </svg>
+          
+          </ion-row>
+    </ion-grid>
+    <br>
+
+
+    <p align="center ">
+        <ion-button *ngIf="state === 'stop'" expand="block" color="primary" (click)="startTimer(duracion)"><ion-icon name="timer-outline" size="large "></ion-icon>START</ion-button>
+        <ion-button *ngIf="state === 'start'" expand="block" color="danger" (click)="stopTimer()"><ion-icon name="timer-outline" size="large "></ion-icon>STOP</ion-button>
+    </p>
+
+
+
+
+</ion-content>

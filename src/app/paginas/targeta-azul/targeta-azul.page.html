@@ -1,0 +1,99 @@
+<ion-header>
+    <ion-toolbar class="tarjetaAzul">
+        <ion-avatar slot="end" class=" ion-margin-start ">
+            <img src="/assets/imagenes/piquero4.png">
+        </ion-avatar>
+
+        <ion-buttons slot="start">
+                <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>PIQUERO CREATIVO</ion-title>
+    </ion-toolbar>
+</ion-header>
+<!-- padding class="background" -->
+<ion-content class="tarjetaAcontent">
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-title>
+                    !Es hora de Dibujar!
+                </ion-title>
+            </ion-col>
+            <ion-col>
+                <ion-grid>
+                    <ion-row class="ion-justify-content-center">
+                        <svg
+                        id="progress-circle"
+                        width="10vh"
+                        height="10vh"
+                        viewBox="0 0 200 200">
+                      
+                        <linearGradient id="linearColors1" x1="0" y1="0" x2="1" y2="1">
+                          <stop offset="0%" stop-color="#ddd6f3"></stop>
+                          <stop offset="50%" stop-color="#faaca8"></stop>
+                        </linearGradient>
+                        <circle
+                            cx="50%"
+                            cy="50%"
+                            [attr.r]="circleR"
+                            fill="none"
+                            stroke="#f3f3f3"
+                            stroke-width="12"
+                          />
+                      
+                          <circle
+                            cx="50%"
+                            cy="50%"
+                            [attr.r]="circleR"
+                            fill="none"
+                            stroke="url(#linearColors1)"
+                            stroke-width="12"
+                            stroke-linecap="round"
+                            [attr.stroke-dasharray]="circleDasharray"
+                            [attr.stroke-dashoffset]="percentageOffset(percent | async)"
+                          />
+                          <text x="50%" y="55%" class="timer-text">{{ time | async }}</text>
+                        </svg>
+                      
+                      </ion-row>
+                </ion-grid>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-card>
+        <ion-card-header class="tarjetaAzul">
+            <ion-card-title align="center ">Guayasamín</ion-card-title>
+        </ion-card-header>
+        <ion-card-content align="justify " color="primary ">
+            <br> {{nombrepreg}}
+            <br>
+            <br>
+            <ion-title align="center ">
+                Pista
+            </ion-title>
+            <ion-card-subtitle align="center ">
+                {{nombrepista}}
+            </ion-card-subtitle>
+            <br>
+            <section>
+                <ion-button color="withe" (click)="presentAlert()">
+                    <ion-icon name="eye-outline" color="primary" size="large"></ion-icon>
+                </ion-button>
+            </section>
+        </ion-card-content>
+
+    </ion-card>
+    <br>
+    
+    <br>
+    <p align="center ">
+        <ion-button *ngIf="state === 'stop'" expand="block" color="primary" (click)="startTimer(duracion)"><ion-icon name="timer-outline" size="large "></ion-icon>START</ion-button>
+        <ion-button *ngIf="state === 'start'" expand="block" color="danger" (click)="stopTimer()"><ion-icon name="timer-outline" size="large "></ion-icon>STOP</ion-button>
+    </p>
+</ion-content>
+<!-- Azul intenso: #007aff
+--background: url(/assets/imagenes/azul3.jpg); 
+ --ion-background-color: #007aff;
+ion-content.background {
+    --background: url(/assets/imagenes/azul3.jpg);
+}-->
